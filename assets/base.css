@@ -196,9 +196,9 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: 120rem;
+  max-width: 146rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .page-width-desktop {
@@ -208,7 +208,7 @@ html.no-js .no-js-hidden {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .page-width--narrow {
@@ -627,6 +627,10 @@ hr {
 
 details > * {
   box-sizing: border-box;
+}
+
+:placeholder{
+  color: var(--color-foreground-4);
 }
 
 .break {
@@ -1817,21 +1821,20 @@ input[type='checkbox'] {
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 5rem;
+  width: 5rem;
   fill: none;
   vertical-align: middle;
 }
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
+  height: 2.6rem;
+  width: 2.6rem;
 }
 
 .header__icon--cart {
   position: relative;
-  margin-right: -1.2rem;
 }
 
 @media screen and (max-width: 989px) {
@@ -1961,7 +1964,6 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 /* Header menu */
 .header__inline-menu {
-  margin-left: -1.2rem;
   grid-area: navigation;
   display: none;
 }

@@ -9,7 +9,7 @@
 }
 
 .card.card--soft {
-  background-color: var(--color-foreground-4);
+  background-color: var(--color-base-background-2);
   color: var(--color-foreground);
 }
 
@@ -52,7 +52,6 @@
 }
 
 .card--product {
-  border: 0.1rem solid var(--color-foreground-4);
   position: relative;
 }
 
