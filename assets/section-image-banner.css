@@ -16,6 +16,7 @@
   .banner {
     min-height: 72rem;
     flex-direction: row;
+    margin-top: 2rem;
   }
 }
 

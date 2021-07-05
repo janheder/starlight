@@ -279,8 +279,8 @@
     {%- endif -%}
 
 
-      <div class="search-modal__content" tabindex="-1">
-        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+      <div class="search" tabindex="-1">
+        <form action="{{ routes.search_url }}" method="get" role="search" class="search-modal__form">
           <div class="field">
             <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
 
@@ -312,10 +312,10 @@
           </summary>
           <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
             <div class="search-modal__content" tabindex="-1">
-              <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+              <form action="{{ routes.search_url }}" method="get" role="search" class="search-modal__form">
                 <div class="field">
                   <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
-                  <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+               
                   <input type="hidden" name="options[prefix]" value="last">
                   <button class="search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">
                     <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">

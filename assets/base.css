@@ -1051,16 +1051,18 @@ summary::-webkit-details-marker {
 
 .grid-products {
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 2rem;
   padding: 0;
   list-style: none;
+  margin: 0;
 }
 
 @media screen and (min-width: 750px) {
   .grid-products {
-
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1894,13 +1896,7 @@ menu-drawer + .header__search {
 
 
 @media screen and (min-width: 990px) {
-  .header:not(.header--top-center) * > .header__search,
-  .header--top-center > .header__search {
-    display: inline-flex;
-  }
-
-  .header:not(.header--top-center) > .header__search,
-  .header--top-center * > .header__search {
+  .header__search {
     display: none;
   }
 }
@@ -1929,6 +1925,7 @@ details[open] > .search-modal {
   height: 100%;
   padding: 0 5rem 0 1rem;
   line-height: 1.8;
+
 }
 
 .search-modal__form {
@@ -1938,6 +1935,9 @@ details[open] > .search-modal {
 .search-modal__close-button {
   position: absolute;
   right: 0.3rem;
+}
+.search{
+  display: none;
 }
 
 @media screen and (min-width: 750px) {
@@ -1958,6 +1958,11 @@ details[open] > .search-modal {
   .search-modal__close-button {
     position: initial;
     margin-left: 0.5rem;
+  }
+  .search{
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
   }
 }
 
