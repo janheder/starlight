@@ -1374,14 +1374,14 @@ deferred-media {
   color: currentColor;
   cursor: pointer;
   display: flex;
-  height: 4.4rem;
+  height: 5rem;
   justify-content: center;
   overflow: hidden;
   padding: 0;
   position: absolute;
   right: 0;
   top: 0;
-  width: 4.4rem;
+  width: 5rem;
 }
 
 .field__button > svg {
@@ -1698,8 +1698,7 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   .header--has-menu:not(.header--middle-left) {
@@ -1833,6 +1832,11 @@ input[type='checkbox'] {
 
 .header__icon--cart {
   position: relative;
+}
+@media screen and (min-width: 990px) {
+  .header__icon--cart {
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 989px) {
@@ -2078,4 +2082,10 @@ details-disclosure > details {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+
+.overflow-hidden-mobile{
+  overflow: hidden;
 }

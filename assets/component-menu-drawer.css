@@ -31,13 +31,12 @@ menu-drawer > details[open] > summary::before {
   position: absolute;
   transform: translateX(-100%);
   visibility: hidden;
-  z-index: 3;
+  z-index: 15;
   left: 0;
   top: 0;
   width: calc(100vw - 4rem);
   max-width: 360px;
   padding: 0;
-  border: 0.1rem solid var(--color-foreground-20);
   border-left: 0;
   background-color: var(--color-background);
   overflow-x: hidden;
@@ -215,7 +214,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 0 2rem;
   font-size: 1.6rem;
   display: flex;
-    height: 5rem;
+    height: 6rem;
 }
 
 .menu-drawer__account .icon-account {
@@ -240,4 +239,25 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__utility-links .list-social__link:hover {
   color: var(--color-foreground-75);
+}
+
+
+#dark-backdrop{
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+@media screen and (max-width: 991px){
+  .menu-drawer-container.menu-opening #dark-backdrop{
+      opacity: 1;
+      pointer-events: auto;
+  }
+
 }

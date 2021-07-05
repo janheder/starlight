@@ -70,15 +70,15 @@
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer>
-        <details class="menu-drawer-container">
-          <summary class="header__icon header__icon--menu header__icon--summary link link--text focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
+        <details class="menu-drawer-container" id="menu-drawer-container">
+          <summary class="header__icon header__icon--menu header__icon--summary link link--text focus-inset" aria-label="{{ 'sections.header.menu' | t }}" id="menu-drawer-summary">
             <span>
               {% render 'icon-hamburger' %}
               {% render 'icon-close' %}
             </span>
           </summary>
           <div id="menu-drawer" class="menu-drawer motion-reduce" tabindex="-1">
-            <div class="menu-drawer__inner-container">
+            <div class="menu-drawer__inner-container" >
               <div class="menu-drawer__navigation-container">
 
                 <div class="menu-drawer__utility-links">
@@ -230,6 +230,7 @@
               </div>
             </div>
           </div>
+          <div id="dark-backdrop"></div>
         </details>
       </header-drawer>
     {%- endif -%}
@@ -309,9 +310,7 @@
                 </div>
               </form>
               <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                  <use href="#icon-close">
-                </svg>
+                {% render 'icon-close' %}
               </button>
             </div>
           </div>

@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'section-product-recommendations.css' | asset_url }}" media="print" onload="this.media='all'">
 
+
+
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
@@ -21,13 +23,16 @@
             add_image_padding: section.settings.add_image_padding,
             show_vendor: section.settings.show_vendor
           %}
+          
         </li>
+        
       {% endfor %}
     </ul>
   {% endif %}
 </product-recommendations>
 
 {% javascript %}
+
   class ProductRecommendations extends HTMLElement {
     constructor() {
       super();
@@ -56,6 +61,7 @@
   }
 
   customElements.define('product-recommendations', ProductRecommendations);
+
 {% endjavascript %}
 
 {% schema %}

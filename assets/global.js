@@ -435,3 +435,12 @@ class DeferredMedia extends HTMLElement {
 
 customElements.define('deferred-media', DeferredMedia);
 
+
+
+
+document.getElementById('dark-backdrop').addEventListener('click', function() {
+
+  document.getElementById('menu-drawer-summary').click();
+
+});
+
