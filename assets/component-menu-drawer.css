@@ -33,8 +33,9 @@ menu-drawer > details[open] > summary::before {
   visibility: hidden;
   z-index: 3;
   left: 0;
-  top: 100%;
+  top: 0;
   width: calc(100vw - 4rem);
+  max-width: 360px;
   padding: 0;
   border: 0.1rem solid var(--color-foreground-20);
   border-left: 0;
@@ -43,10 +44,7 @@ menu-drawer > details[open] > summary::before {
 }
 
 .js .menu-drawer {
-  height: calc(100vh - 100%);
-  height: calc(
-    var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%))
-  );
+  height: 100vh;
 }
 
 .js details[open] > .menu-drawer,
@@ -74,7 +72,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__inner-container {
   position: relative;
-  height: 100%;
+  height: auto;
 }
 
 .menu-drawer__navigation-container {
@@ -206,7 +204,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__utility-links {
-  padding: 2rem;
+  padding: 0rem;
   background-color: var(--color-foreground-3);
 }
 
@@ -214,9 +212,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  padding: 1.2rem;
-  margin-left: -1.2rem;
-  font-size: 1.4rem;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  display: flex;
+    height: 5rem;
 }
 
 .menu-drawer__account .icon-account {
