@@ -1164,9 +1164,8 @@ deferred-media {
   padding: 0.9rem 3rem 1.1rem;
   text-decoration: none;
   border: 0;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: var(--color-button-background);
-  box-shadow: 0 0 0 0.1rem var(--color-button-border);
   color: var(--color-button-text);
   min-width: 12rem;
   height: 5rem;
@@ -1176,10 +1175,9 @@ deferred-media {
   appearance: none;
 }
 
+
 .button:focus-visible {
-  box-shadow: 0 0 0 0.1rem var(--color-button-border),
-    0 0 0 0.3rem var(--color-background),
-    0 0 0.5rem 0.4rem var(--color-foreground-30);
+
 }
 
 .button:focus {
@@ -1212,7 +1210,7 @@ deferred-media {
 .button:not([disabled]):hover,
 .shopify-challenge__button:hover,
 .customer button:hover {
-  box-shadow: 0 0 0 0.2rem var(--color-button-border);
+ 
 }
 
 /* Button - other */
@@ -1342,9 +1340,6 @@ deferred-media {
   flex-direction: column;
 }
 
-.customer .field {
-  display: block;
-}
 
 .field--with-error {
   flex-wrap: wrap;
@@ -1368,6 +1363,7 @@ deferred-media {
   letter-spacing: 0rem;
   line-height: 1.5;
   padding-bottom: 5px;
+  text-align: left;
 }
 
 

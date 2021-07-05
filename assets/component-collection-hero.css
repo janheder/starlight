@@ -10,13 +10,13 @@
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  padding: 2rem 0 2rem 0;
   margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 750px) {
   .collection-hero.collection-hero--with-image {
-    padding: 4rem 0 4rem;
+    padding: 4rem 0 4rem 0;
   }
 }
 
