@@ -1,5 +1,6 @@
 {
   "current": {
+    "type_header_font": "mono",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
