@@ -354,7 +354,7 @@ h5,
 .h5 {
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: 0;
   color: var(--color-foreground);
   line-height: 1.3;
@@ -1192,8 +1192,7 @@ deferred-media {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.5rem;
-  letter-spacing: 0rem;
+  font-size: 1.6rem;
   line-height: 1.2;
 }
 
@@ -1272,7 +1271,7 @@ deferred-media {
   color: var(--color-foreground);
   font-size: 1.6rem;
   width: 100%;
-  box-shadow: 0 0 0 0.1rem var(--color-foreground-55);
+  box-shadow: 0 0 0 0.1rem var(--color-foreground-10);
   height: 4.5rem;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
@@ -1354,14 +1353,14 @@ deferred-media {
 .customer .field input {
   flex-grow: 1;
   text-align: left;
-  padding: 1.5rem;
+  padding: 0 2rem;
 }
 
 .field__label,
 .customer .field label {
   font-size: 1.6rem;
-  left: 1.5rem;
-  top: 1.3rem;
+  left: 2rem;
+  top: 1.1rem;
   margin-bottom: 0;
   pointer-events: none;
   position: absolute;
@@ -1389,7 +1388,7 @@ deferred-media {
 .customer .field input:focus,
 .customer .field input:not(:placeholder-shown),
 .customer .field input:-webkit-autofill {
-  padding: 2.2rem 1.5rem 0.8rem;
+  padding: 2.2rem 2rem 0.8rem;
 }
 
 .field__input::-webkit-search-cancel-button,
@@ -1635,15 +1634,15 @@ input[type='checkbox'] {
   position: absolute;
   background-color: var(--color-base-accent-1);
   color: var(--color-base-solid-button-labels);
-  height: 1.7rem;
-  width: 1.7rem;
+  height: 1.4rem;
+  width: 1.4rem;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  bottom: 1rem;
+  left: 2.5rem;
   line-height: 1.1;
 }
 
@@ -1726,9 +1725,7 @@ input[type='checkbox'] {
 }
 
 .header {
-  display: grid;
-  grid-template-areas: 'left-icon heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  display: flex;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1779,6 +1776,7 @@ input[type='checkbox'] {
 .header__heading {
   margin: 0;
   line-height: 0;
+
 }
 
 .header > .header__heading-link {
@@ -1787,8 +1785,9 @@ input[type='checkbox'] {
 
 .header__heading,
 .header__heading-link {
-  grid-area: heading;
   justify-self: center;
+  display: flex;
+  flex-grow: 1;
 }
 
 .header__heading-link {
@@ -1813,6 +1812,7 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 990px) {
+
   .header__heading-link {
     margin-left: -0.75rem;
   }
@@ -1820,6 +1820,7 @@ input[type='checkbox'] {
   .header__heading,
   .header__heading-link {
     justify-self: start;
+    flex-grow: 0;
   }
 
   .header--top-center .header__heading-link,
@@ -1861,8 +1862,8 @@ input[type='checkbox'] {
 }
 
 .header__icon .icon {
-  height: 2.6rem;
-  width: 2.6rem;
+  height: 2.1rem;
+  width: 2.2rem;
 }
 
 .header__icon--cart {
@@ -1963,6 +1964,7 @@ details[open] > .search-modal {
     display: flex;
     justify-content: center;
     padding: 0 2rem;
+    flex-grow: 1;
   }
 }
 
