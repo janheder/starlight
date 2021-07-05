@@ -1,5 +1,6 @@
 .collection-hero {
   margin-bottom: 2rem;
+  background-color: var(--color-base-background-2);
 }
 
 .collection-hero--with-image {
@@ -29,7 +30,7 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero {
-    padding: 0 0 2rem;
+    padding: 6rem 0;
     margin-bottom: 0;
   }
 
@@ -50,7 +51,7 @@
 }
 
 .collection-hero__title {
-  margin: 5rem 0 0;
+  margin: 0;
 }
 
 .collection-hero__title + .collection-hero__description {

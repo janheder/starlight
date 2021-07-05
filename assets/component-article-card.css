@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 750px) {
   .article-card__info {
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
   }
 }
 
@@ -87,6 +87,7 @@
 .article-card__title {
   text-decoration: none;
   word-break: break-word;
+  font-size: 1.8rem;
 }
 
 .article-card__excerpt{
@@ -113,7 +114,6 @@
 }
 
 .article-card__footer {
-  letter-spacing: 0.1rem;
   font-size: 1.4rem;
 }
 

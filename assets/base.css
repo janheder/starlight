@@ -459,7 +459,7 @@ blockquote {
 
 .caption-with-letter-spacing {
   font-size: 1rem;
-  letter-spacing: 0.13rem;
+  letter-spacing: 0rem;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -579,7 +579,6 @@ h6:empty {
   display: inline-flex;
   font-size: 1.4rem;
   font-weight: 600;
-  letter-spacing: 0.1rem;
   text-decoration: none;
   margin-bottom: 4.5rem;
   white-space: nowrap;
@@ -807,8 +806,8 @@ summary::-webkit-details-marker {
 
 .title-wrapper--self-padded-tablet-down,
 .title-wrapper--self-padded-mobile {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -868,7 +867,7 @@ summary::-webkit-details-marker {
 .subtitle {
   font-size: 1.8rem;
   line-height: 1.8;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0rem;
   color: var(--color-foreground-70);
 }
 
@@ -1165,12 +1164,13 @@ deferred-media {
   padding: 0.9rem 3rem 1.1rem;
   text-decoration: none;
   border: 0;
-  border-radius: 0;
+  border-radius: 5px;
   background-color: var(--color-button-background);
   box-shadow: 0 0 0 0.1rem var(--color-button-border);
   color: var(--color-button-text);
   min-width: 12rem;
-  min-height: 4.5rem;
+  height: 5rem;
+  font-weight: 500;
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
@@ -1272,7 +1272,7 @@ deferred-media {
   font-size: 1.6rem;
   width: 100%;
   box-shadow: 0 0 0 0.1rem var(--color-foreground-10);
-  height: 4.5rem;
+  height: 5rem;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
 }
@@ -1339,6 +1339,7 @@ deferred-media {
   position: relative;
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .customer .field {
@@ -1359,47 +1360,16 @@ deferred-media {
 .field__label,
 .customer .field label {
   font-size: 1.6rem;
-  left: 2rem;
-  top: 1.1rem;
   margin-bottom: 0;
   pointer-events: none;
-  position: absolute;
   transition: top var(--duration-short) ease,
-    font-size var(--duration-short) ease;
+  font-size var(--duration-short) ease;
   color: var(--color-foreground-75);
   letter-spacing: 0rem;
   line-height: 1.5;
+  padding-bottom: 5px;
 }
 
-.field__input:focus ~ .field__label,
-.field__input:not(:placeholder-shown) ~ .field__label,
-.field__input:-webkit-autofill ~ .field__label,
-.customer .field input:focus ~ label,
-.customer .field input:not(:placeholder-shown) ~ label,
-.customer .field input:-webkit-autofill ~ label {
-  font-size: 1rem;
-  top: 0.3em;
-  letter-spacing: 0rem;
-}
-
-.field__input:focus,
-.field__input:not(:placeholder-shown),
-.field__input:-webkit-autofill,
-.customer .field input:focus,
-.customer .field input:not(:placeholder-shown),
-.customer .field input:-webkit-autofill {
-  padding: 2.2rem 2rem 0.8rem;
-}
-
-.field__input::-webkit-search-cancel-button,
-.customer .field input::-webkit-search-cancel-button {
-  display: none;
-}
-
-.field__input::placeholder,
-.customer .field input::placeholder {
-  opacity: 0;
-}
 
 .field__button {
   align-items: center;
@@ -1507,7 +1477,7 @@ input[type='checkbox'] {
 
 /* component-quantity */
 .quantity {
-  border: 0.1rem solid var(--color-foreground-55);
+  border: 0.1rem solid var(--color-foreground-10);
   position: relative;
   width: 14rem;
   display: flex;
@@ -1640,7 +1610,7 @@ input[type='checkbox'] {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   bottom: 1rem;
   left: 2.5rem;
   line-height: 1.1;
@@ -1691,7 +1661,7 @@ input[type='checkbox'] {
   text-align: center;
   padding: 1rem 2rem;
   margin: 0;
-  letter-spacing: 0.1rem;
+  letter-spacing: rem;
 }
 
 /* section-header */
