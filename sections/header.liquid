@@ -265,7 +265,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
+          <img src="{{ 'starlight.svg' | asset_url }}"  alt="{{ shop.name }}" itemprop="logo" class="default-logo"> 
           {%- endif -%}
         </a>
     {%- if request.page_type == 'index' -%}

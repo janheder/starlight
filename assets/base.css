@@ -1773,7 +1773,9 @@ input[type='checkbox'] {
   height: auto;
   width: 100%;
 }
-
+.default-logo{
+  height: 4rem;
+}
 @media screen and (min-width: 990px) {
 
   .header__heading-link {
@@ -1799,8 +1801,8 @@ input[type='checkbox'] {
   justify-self: end;
 }
 
-.header__icon:not(.header__icon--summary),
-.header__icon span {
+
+.header__icon, .header__icon span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1816,7 +1818,7 @@ input[type='checkbox'] {
 
 .header__icon:hover .icon,
 .modal__close-button:hover .icon {
-  transform: scale(1.07);
+
 }
 
 .header__icon {
@@ -1833,6 +1835,12 @@ input[type='checkbox'] {
   position: relative;
 }
 @media screen and (min-width: 990px) {
+  .header__icon {
+    border-radius: 50%;
+  }
+  .header__icon:hover{
+    background-color: var(--color-base-background-2);;
+  }
   .header__icon--cart {
     margin-left: 1rem;
   }
@@ -1840,6 +1848,9 @@ input[type='checkbox'] {
 
 @media screen and (max-width: 989px) {
   menu-drawer ~ .header__icons .header__icon--account {
+    display: none;
+  }
+  .header__icon--account{
     display: none;
   }
 }
@@ -1959,7 +1970,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 .js details[open]:not(.menu-opening) > .header__icon--menu .icon-hamburger {
   visibility: visible;
   opacity: 1;
-  transform: scale(1.07);
+
 }
 
 .header__inline-menu details[open] > .header__submenu {

@@ -34,8 +34,8 @@ menu-drawer > details[open] > summary::before {
   z-index: 15;
   left: 0;
   top: 0;
-  width: calc(100vw - 4rem);
-  max-width: 360px;
+  width: calc(100vw - 6rem);
+  max-width: 340px;
   padding: 0;
   border-left: 0;
   background-color: var(--color-background);
