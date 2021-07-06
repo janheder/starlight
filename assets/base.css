@@ -1475,28 +1475,27 @@ input[type='checkbox'] {
 .quantity {
   border: 0.1rem solid var(--color-foreground-10);
   position: relative;
-  width: 14rem;
-  display: flex;
+  display: inline-flex;
 }
 
 .quantity__input {
   color: currentColor;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   opacity: 0.85;
   text-align: center;
   background-color: transparent;
   border: 0;
   padding: 0 0.5rem;
-  height: 4.5rem;
-  width: 100%;
+  height: 5rem;
+  width: 5rem;
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
 }
 
 .quantity__button {
-  width: 4.5rem;
+  width: 5rem;
   flex-shrink: 0;
   font-size: 1.8rem;
   border: 0;
@@ -1687,7 +1686,7 @@ input[type='checkbox'] {
 }
 
 .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid var(--color-foreground-10);
+  border-bottom: 0.1rem solid var(--color-foreground-8);
 }
 
 .header {
@@ -1698,7 +1697,7 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding: 2rem;
+    padding: 3rem 2rem;
   }
 
   .header--has-menu:not(.header--middle-left) {
@@ -1767,7 +1766,7 @@ input[type='checkbox'] {
 
 .header__heading-link .h2 {
   line-height: 1;
-  color: var(--color-foreground-75);
+  color: var(--color-foreground);
 }
 
 .header__heading-logo {
@@ -1974,7 +1973,8 @@ details[open] > .header__icon--menu .icon-hamburger {
   grid-area: navigation;
   display: none;
   background-color: var(--color-background);
-  border-bottom: 0.1rem solid var(--color-foreground-10);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 8%);
+  /*border-bottom: 0.1rem solid var(--color-foreground-10);*/
 }
 
 .header--top-center .header__inline-menu,
@@ -2006,7 +2006,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .header__menu-item {
   padding: 0 2rem;
-  height: 5.2rem;
+  height: 5.6rem;
   text-decoration: none;
   font-size: 1.6rem;
   color: var(--color-foreground);
@@ -2088,4 +2088,17 @@ details-disclosure > details {
 
 .overflow-hidden-mobile{
   overflow: hidden;
+}
+
+.product-cta{
+  display: flex;
+}
+.product-cta .product-form__quantity .form__label{
+  display: none;
+}
+.product-cta .quantity__button, .product-cta .quantity__input{
+  height: 5.8rem;
+}
+.product-cta .buy-button{
+  flex-grow: 1;
 }

@@ -233,7 +233,7 @@
 
 
          
-
+          <div class="product-cta">
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -259,10 +259,10 @@
               </quantity-input>
             </div>
 
-
+          
 
           {%- when 'buy_buttons' -%}
-            <div {{ block.shopify_attributes }}>
+            <div {{ block.shopify_attributes }} class="buy-button">
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -274,6 +274,7 @@
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         {%- if product.selected_or_first_available_variant.available -%}
+                          {% render 'icon-cart' %}
                           {{ 'products.product.add_to_cart' | t }}
                         {%- else -%}
                           {{ 'products.product.sold_out' | t }}
@@ -309,6 +310,7 @@
             </div>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+          </div>
           {%- endcase -%}
           
 
