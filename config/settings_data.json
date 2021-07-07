@@ -1,6 +1,7 @@
 {
   "current": {
     "type_header_font": "sans-serif",
+    "social_twitter_link": "https:\/\/twitter.com\/janheder",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
