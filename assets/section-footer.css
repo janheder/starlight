@@ -28,6 +28,12 @@
   padding-top: 5rem;
   display: block;
 }
+.footer__content-links{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+
+}
 
 @media screen and (min-width: 750px) {
   .footer__content-top {
@@ -47,7 +53,7 @@
 }
 
 .footer__content-bottom {
-  border-top: solid 0.1rem var(--color-foreground-20);
+  border-top: solid 0.1rem var(--color-foreground-8);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -143,6 +149,7 @@
   justify-content: center;
   align-items: flex-end;
   padding: 6rem 0;
+  border-bottom: solid 0.1rem var(--color-foreground-8);
 }
 
 .footer-block--newsletter:only-child {
@@ -384,7 +391,7 @@ noscript .localization-selector.link {
 }
 
 .footer__payment {
-  margin-top: 1.5rem;
+  margin-top: 0rem;
 }
 
 .footer__copyright {

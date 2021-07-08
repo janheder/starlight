@@ -1061,7 +1061,7 @@ summary::-webkit-details-marker {
 @media screen and (min-width: 750px) {
   .grid-products {
     grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -1170,11 +1170,18 @@ deferred-media {
   min-width: 12rem;
   height: 5rem;
   font-weight: 500;
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-short) ease, 
+  background var(--duration-short) ease,
+  color var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
 }
-
+.button:hover,
+.shopify-challenge__button:hover,
+.customer button:hover {
+  background-color: rgba(var(--color-base-accent-1-rgb),0.2);
+  color: var(--color-button-background);
+}
 
 .button:focus-visible {
 
@@ -1205,13 +1212,6 @@ deferred-media {
   padding: 1.2rem 2.6rem;
 }
 
-/* Button - hover */
-
-.button:not([disabled]):hover,
-.shopify-challenge__button:hover,
-.customer button:hover {
- 
-}
 
 /* Button - other */
 
@@ -1774,10 +1774,12 @@ input[type='checkbox'] {
   width: 100%;
 }
 .default-logo{
-  height: 4rem;
+  height: 3.2rem;
 }
 @media screen and (min-width: 990px) {
-
+  .default-logo{
+    height: 4rem;
+  }
   .header__heading-link {
     margin-left: -0.75rem;
   }
@@ -2052,6 +2054,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .header__submenu.list-menu {
   padding: 2rem 0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header__submenu .header__submenu {
