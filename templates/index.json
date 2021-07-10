@@ -77,7 +77,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/black-friday-online-store.jpg",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
       }
