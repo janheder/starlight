@@ -628,11 +628,18 @@ details > * {
   box-sizing: border-box;
 }
 
+.search__input.field__input {
+  padding-right: 5rem;
+  background: var(--color-base-background-2);
+  box-shadow: none;
+  transition: none;
+}
 .search__input.field__input::placeholder{
   color: var(--color-foreground-50);
   opacity: 1;
   font-size: 1.6rem;
 }
+
 
 .break {
   word-break: break-word;

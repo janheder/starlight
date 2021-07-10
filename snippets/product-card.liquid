@@ -12,6 +12,13 @@
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
+
+{% comment %}
+  assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
+{% endcomment %}
+
+
+
 <div class="card-wrapper">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
@@ -20,7 +27,8 @@
       <div class="card__inner">
         {%- if product_card_product.featured_media -%}
           {%- liquid
-            assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
+
+            assign featured_media_aspect_ratio = 0.80
 
             if product_card_product.featured_media.aspect_ratio == nil
               assign featured_media_aspect_ratio = 1

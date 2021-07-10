@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Sunshine",
+    "theme_name": "Starlight",
     "theme_version": "1.0.0",
-    "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/shopify.dev\/themes\/tools\/dawn",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_author": "Jan Heder",
+    "theme_documentation_url": "https:\/\/janheder.cz\/starlight",
+    "theme_support_url": "https:\/\/janheder.cz\/starlight\/"
   },
   {
     "name": "t:settings_schema.colors.name",

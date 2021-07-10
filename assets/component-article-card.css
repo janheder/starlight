@@ -103,7 +103,12 @@
   background: var(--color-background);
   font-weight: 500;
   font-size: 1.4rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 .article-card__excerpt{
   
