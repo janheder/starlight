@@ -26,7 +26,7 @@
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
-                <th class="right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.price' | t }}</th>
+                <th class="caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.price' | t }}</th>
                 <th class="cart-items__heading--wide medium-up caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
                 <th class="medium-up right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
               </tr>
@@ -107,7 +107,7 @@
                     </p>
                   </td>
 
-                  <td class="cart-item__prices right">
+                  <td class="cart-item__prices">
                     <div class="cart-item__price-wrapper">
                       {%- if item.original_price != item.final_price -%}
                         <dl class="cart-item__discounted-prices">
@@ -115,14 +115,14 @@
                             {{ 'products.product.price.regular_price' | t }}
                           </dt>
                           <dd>
-                            <s class="cart-item__old-price price price--end">
+                            <s class="cart-item__old-price price">
                               {{ item.original_price | money }}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
-                          <dd class="price price--end">
+                          <dd class="price">
                             {{ item.final_price | money }}
                           </dd>
                         </dl>
@@ -140,7 +140,7 @@
                           </div>
                         {%- endif -%}
                       {%- else -%}
-                        <span class="price price--end">
+                        <span class="price">
                           {{ item.original_price | money }}
                         </span>
                       {%- endif -%}
