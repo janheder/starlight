@@ -639,6 +639,18 @@ details > * {
   opacity: 1;
   font-size: 1.6rem;
 }
+.search__input.field__input:focus{
+  padding: 0 2rem;
+}
+
+.search__button .icon {
+  height: 1.8rem;
+}
+
+/* Remove extra spacing for search inputs in Safari */
+input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 
 .break {
